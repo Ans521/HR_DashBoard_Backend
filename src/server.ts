@@ -19,7 +19,9 @@ app.use(express.static('public'));
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "http://82.180.144.143:3000"
+    "http://82.180.144.143:3000",
+    "http://82.180.144.143",
+    "http://82.180.144.143:3000/api"
   ],
   credentials: true    
 }));
