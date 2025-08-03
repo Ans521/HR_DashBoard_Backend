@@ -10,7 +10,6 @@ const router = express.Router();
 router.post("/signup", signupUser)
 router.post('/login', loginUser)
 router.post('/logout', verifyToken, logoutUser)
-router.get('/checkAuth', verifyToken, checkAuth)
 router.get('/employees/attendance', verifyToken, getAttendance)
 router.patch('/employees/attendance/:status/:empId', verifyToken, updateAttendanceStatus)
 router.post("/candidates/addCandidate", verifyToken, upload.single("resume"), validCandidateData, addCandidate);
